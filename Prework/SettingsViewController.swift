@@ -13,6 +13,14 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Access UserDefaults
+        let defaults = UserDefaults.standard
+        
+        defaults.set(0.15, forKey: "tipPer1")
+        defaults.set(0.18, forKey: "tipPer2")
+        defaults.set(0.20, forKey: "tipPer3")
+        defaults.synchronize()
     }
     
 
